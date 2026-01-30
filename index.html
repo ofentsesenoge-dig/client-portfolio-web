@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bongani Tshabalala | Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top left, #111827, #050505 60%);
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* SOFT GLOW BACKGROUND */
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #7c3aed;
+    filter: blur(180px);
+    top: -100px;
+    left: -100px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: #22d3ee;
+    filter: blur(160px);
+    bottom: -120px;
+    right: -120px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* HERO */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10% 70px;
+    flex-wrap: wrap;
+}
+
+.profile-pic img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50% / 40%;
+    border: 3px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(124,58,237,0.6);
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    margin: 15px 0 25px;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin-right: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.github-btn {
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+    color: white;
+    box-shadow: 0 0 15px rgba(124,58,237,0.6);
+}
+
+.email-btn {
+    border: 1px solid #333;
+    color: #eee;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(124,58,237,0.8);
+}
+
+/* SECTIONS */
+section {
+    max-width: 950px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 10px;
+}
+
+/* GLASS CARDS */
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124,58,237,0.6);
+}
+
+/* SKILLS */
+.skill {
+    margin-bottom: 18px;
+}
+
+.skill-bar {
+    background: #1f2937;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 10px;
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+    margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="profile-pic">
+        <img src="bongs.jpg" alt="Bongani Profile Picture">
+    </div>
+
+    <div class="hero-text">
+        <h1>Bongani Nkossana Tshabalala</h1>
+        <p>Application Development Student • Future Software Engineer</p>
+
+        <a href="https://github.com/yourusername" target="_blank" class="btn github-btn">GitHub</a>
+        <a href="mailto:tshabalalabongani315@gmail.com" class="btn email-btn">Email Me</a>
+    </div>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        Passionate BCIS Application Development student at IIE Varsity College with strong interests in software development, databases, and problem-solving. Disciplined, reliable, and experienced in balancing academics, leadership, and high-performance sport.
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="card"><strong>BCIS in Application Development (In Progress)</strong><br>IIE Varsity College | 2024 – Present</div>
+    <div class="card"><strong>National Senior Certificate</strong><br>Hoërskool Warmbad | 2019 – 2023</div>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+
+    <div class="skill">Java – 70%
+        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+    </div>
+
+    <div class="skill">HTML & CSS – 75%
+        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">C# – 65%
+        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+    </div>
+
+    <div class="skill">Microsoft Office – 90%
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+    </div>
+</section>
+
+<section>
+    <h2>Experience & Leadership</h2>
+    <div class="card">Junior Triathlon Coach (Volunteer) | 2024 – Present</div>
+    <div class="card">Leadership Executive Committee | 2022 – 2023</div>
+    <div class="card">Deputy Head of Sport | 2022 – 2023</div>
+</section>
+
+<section>
+    <h2>Achievements</h2>
+    <div class="card">6 distinctions in first year of BCAD (2024)</div>
+    <div class="card">Recognised for leadership and reliability</div>
+    <div class="card">U23 Elite Triathlete competing nationally</div>
+</section>
+
+<footer>
+    © 2026 Bongani Tshabalala • Portfolio
+</footer>
+
+</body>
+</html>
