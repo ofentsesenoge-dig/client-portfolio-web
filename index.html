@@ -2,247 +2,338 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Bongani Tshabalala | Developer Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bongani Tshabalala | Full Stack Developer</title>
+<meta name="description" content="Bongani Tshabalala is a full stack developer and software development intern in Pretoria, building with React, Node.js, ASP.NET Core, Java, Kotlin and C#. BCAD student at IIE Varsity College." />
+<meta name="author" content="Bongani Tshabalala" />
+<meta name="theme-color" content="#0b1020" />
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Bongani Tshabalala | Full Stack Developer" />
+<meta property="og:description" content="Full stack developer and software development intern. React, Node.js, ASP.NET Core, PostgreSQL. See my projects." />
+<meta name="twitter:card" content="summary" />
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EBT%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bongani Nkosana Tshabalala",
+  "jobTitle": "Full Stack Developer",
+  "email": "mailto:tshabalalabongani315@gmail.com",
+  "url": "https://github.com/tshabalalabongani315-afk",
+  "sameAs": [
+    "https://github.com/tshabalalabongani315-afk",
+    "https://www.linkedin.com/in/bongani-tshabalala-0873b039a"
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "Pretoria", "addressCountry": "ZA" },
+  "alumniOf": "IIE Varsity College"
 }
-
-body {
-    background: radial-gradient(circle at top left, #111827, #050505 60%);
-    color: #f5f5f5;
-    overflow-x: hidden;
-}
-
-/* SOFT GLOW BACKGROUND */
-body::before {
-    content: "";
-    position: fixed;
-    width: 500px;
-    height: 500px;
-    background: #7c3aed;
-    filter: blur(180px);
-    top: -100px;
-    left: -100px;
-    opacity: 0.25;
-    z-index: -1;
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    width: 400px;
-    height: 400px;
-    background: #22d3ee;
-    filter: blur(160px);
-    bottom: -120px;
-    right: -120px;
-    opacity: 0.2;
-    z-index: -1;
-}
-
-/* HERO */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 100px 10% 70px;
-    flex-wrap: wrap;
-}
-
-.profile-pic img {
-    width: 230px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 50% / 40%;
-    border: 3px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(124,58,237,0.6);
-}
-
-.hero-text h1 {
-    font-size: 42px;
-    font-weight: 600;
-    background: linear-gradient(90deg, #7c3aed, #22d3ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-text p {
-    margin: 15px 0 25px;
-    color: #cbd5e1;
-    font-size: 18px;
-}
-
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    padding: 12px 26px;
-    margin-right: 10px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.github-btn {
-    background: linear-gradient(90deg, #7c3aed, #22d3ee);
-    color: white;
-    box-shadow: 0 0 15px rgba(124,58,237,0.6);
-}
-
-.email-btn {
-    border: 1px solid #333;
-    color: #eee;
-}
-
-.btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 25px rgba(124,58,237,0.8);
-}
-
-/* SECTIONS */
-section {
-    max-width: 950px;
-    margin: 70px auto;
-    padding: 0 20px;
-}
-
-h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-}
-
-h2::after {
-    content: "";
-    width: 60%;
-    height: 3px;
-    background: linear-gradient(90deg, #7c3aed, #22d3ee);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    border-radius: 10px;
-}
-
-/* GLASS CARDS */
-.card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 18px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(124,58,237,0.6);
-}
-
-/* SKILLS */
-.skill {
-    margin-bottom: 18px;
-}
-
-.skill-bar {
-    background: #1f2937;
-    height: 10px;
-    border-radius: 20px;
-    margin-top: 6px;
-    overflow: hidden;
-}
-
-.skill-fill {
-    height: 10px;
-    background: linear-gradient(90deg, #7c3aed, #22d3ee);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #888;
-    margin-top: 60px;
-}
-</style>
+</script>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-    <div class="profile-pic">
-        <img src="bongs.jpg" alt="Bongani Profile Picture">
-    </div>
+<nav class="nav" id="nav" aria-label="Primary">
+  <a class="nav-logo" href="#top" aria-label="Back to top">BT<span>.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
 
+<main id="main">
+
+  <!-- HERO -->
+  <header class="hero" id="top">
     <div class="hero-text">
-        <h1>Bongani Nkossana Tshabalala</h1>
-        <p>Application Development Student • Future Software Engineer</p>
-
-        <a href="https://github.com/yourusername" target="_blank" class="btn github-btn">GitHub</a>
-        <a href="mailto:tshabalalabongani315@gmail.com" class="btn email-btn">Email Me</a>
-    </div>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        Passionate BCIS Application Development student at IIE Varsity College with strong interests in software development, databases, and problem-solving. Disciplined, reliable, and experienced in balancing academics, leadership, and high-performance sport.
-    </div>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <div class="card"><strong>BCIS in Application Development (In Progress)</strong><br>IIE Varsity College | 2024 – Present</div>
-    <div class="card"><strong>National Senior Certificate</strong><br>Hoërskool Warmbad | 2019 – 2023</div>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-
-    <div class="skill">Java – 70%
-        <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+      <p class="eyebrow"><span class="dot"></span> Software Development Intern · Open to opportunities</p>
+      <h1>Hi, I'm <span class="grad">Bongani</span>.<br />I build full stack software.</h1>
+      <p class="lead">
+        BCAD student and intern at FOCI Group, building and testing web and mobile software
+        end to end: React and Node front to back, ASP.NET Core APIs, and SQL databases.
+        I care about code that is tested, secure and easy to maintain.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="https://github.com/tshabalalabongani315-afk" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/bongani-tshabalala-0873b039a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+      <ul class="hero-stack" aria-label="Core stack">
+        <li>React</li><li>Node.js</li><li>ASP.NET Core</li><li>PostgreSQL</li><li>Java</li><li>Kotlin</li>
+      </ul>
     </div>
 
-    <div class="skill">HTML & CSS – 75%
-        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+    <div class="hero-photo">
+      <picture>
+        <source srcset="assets/profile.webp" type="image/webp" />
+        <img src="assets/profile.jpg" alt="Portrait of Bongani Tshabalala" width="320" height="320" />
+      </picture>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="At a glance">
+    <div class="stat"><strong>9</strong><span>Distinctions across<br />first two years</span></div>
+    <div class="stat"><strong>4</strong><span>Featured full stack<br />and desktop projects</span></div>
+    <div class="stat"><strong>U23</strong><span>SA Cross Triathlon<br />Champion</span></div>
+    <div class="stat"><strong>2027</strong><span>Graduating<br />BCAD</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <h2 class="section-title"><span class="idx">01</span> About</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm a Bachelor of Computer and Application Development student at IIE Varsity College,
+          currently interning at <strong>FOCI Group</strong> in Pretoria. My day-to-day covers
+          API testing, regression testing, k6 load testing and backend validation on a
+          compliance-focused proptech platform.
+        </p>
+        <p>
+          Alongside work, I build my own full stack projects: a farm-management app in React and Node,
+          a secure authentication portal on ASP.NET Core Identity, and a WPF desktop app with sentiment detection.
+          Being on the testing side of a real platform makes me write code with failure cases in mind.
+        </p>
+        <p>
+          Outside of code I'm a <strong>U23 South African Cross Triathlon Champion</strong> competing nationally
+          and internationally. Training and racing at that level is where my discipline and consistency come from.
+        </p>
+      </div>
+      <aside class="about-card">
+        <h3>Currently</h3>
+        <ul>
+          <li><span class="k">Role</span> Software Development Intern, FOCI Group</li>
+          <li><span class="k">Studying</span> BCAD, IIE Varsity College</li>
+          <li><span class="k">Based in</span> Pretoria, South Africa</li>
+          <li><span class="k">Focus</span> Full stack, API design, QA automation</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <h2 class="section-title"><span class="idx">02</span> Experience</h2>
+    <div class="timeline">
+      <article class="tl-item">
+        <div class="tl-head">
+          <div>
+            <h3>Software Development Intern</h3>
+            <p class="org">FOCI Group · Pretoria</p>
+          </div>
+          <span class="date">June 2026 – Present</span>
+        </div>
+        <ul class="bullets">
+          <li>Perform API and regression testing on enterprise applications, and run performance and load tests with <strong>k6</strong>.</li>
+          <li>Test backend services and integrations built on <strong>PostgreSQL</strong> and <strong>Supabase</strong>; identify, reproduce and document defects.</li>
+          <li>Contribute to QA validation across the SDLC on a compliance-focused proptech platform.</li>
+          <li>Work in a cross-functional Agile team: sprint planning and daily stand-ups.</li>
+        </ul>
+        <ul class="chips"><li>API testing</li><li>k6</li><li>PostgreSQL</li><li>Supabase</li><li>Agile / Scrum</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="reveal">
+    <h2 class="section-title"><span class="idx">03</span> Projects</h2>
+    <p class="section-sub">Selected work. Each repository has setup instructions and a feature list.</p>
+
+    <div class="project-grid">
+
+      <article class="project featured">
+        <div class="project-art art-cattle" aria-hidden="true"><span>CM</span></div>
+        <div class="project-body">
+          <p class="tag">Full stack · Web</p>
+          <h3>Cattle Manager</h3>
+          <p>
+            Record-keeping app for commercial cattle owners. Register animals by tag and breed,
+            track vaccinations and weight, log daily kraal counts, and reconcile the register
+            against today's count to spot anything unaccounted for.
+          </p>
+          <ul class="bullets small">
+            <li>JWT auth with bcrypt-hashed passwords; every API endpoint is protected.</li>
+            <li>Live dashboard with vaccinations-due alerts and Recharts visualisations.</li>
+            <li>Express REST API with SQLite; React + Vite + Chakra UI front end.</li>
+          </ul>
+          <ul class="chips"><li>React</li><li>Vite</li><li>Chakra UI</li><li>Node.js</li><li>Express</li><li>SQLite</li><li>JWT</li></ul>
+          <div class="links">
+            <a href="https://github.com/tshabalalabongani315-afk/CattleManager" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project featured">
+        <div class="project-art art-glms" aria-hidden="true"><span>GL</span></div>
+        <div class="project-body">
+          <p class="tag">Enterprise · Web API · 2026</p>
+          <h3>Global Logistics Management System</h3>
+          <p>
+            Enterprise web application that replaces legacy spreadsheets with a service-oriented
+            platform for contract and service-request management.
+          </p>
+          <ul class="bullets small">
+            <li>ASP.NET Core MVC front end backed by a secured Web API.</li>
+            <li>JWT authentication, EF Core data layer on SQL Server.</li>
+            <li>Containerised with Docker and covered by xUnit tests.</li>
+          </ul>
+          <ul class="chips"><li>ASP.NET Core MVC</li><li>Web API</li><li>EF Core</li><li>SQL Server</li><li>JWT</li><li>Docker</li><li>xUnit</li></ul>
+          <div class="links"><span class="muted">Private repository · walkthrough available on request</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art art-secure" aria-hidden="true"><span>SP</span></div>
+        <div class="project-body">
+          <p class="tag">Web · Security</p>
+          <h3>Secure User Portal</h3>
+          <p>
+            ASP.NET Core 8 Razor Pages app built around ASP.NET Core Identity: registration with email confirmation,
+            password reset, TOTP two-factor authentication, role-based authorisation and an activity-log dashboard.
+          </p>
+          <ul class="chips"><li>ASP.NET Core 8</li><li>Identity</li><li>EF Core</li><li>SQL Server</li><li>MailKit</li><li>xUnit + Moq</li></ul>
+          <div class="links">
+            <a href="https://github.com/tshabalalabongani315-afk/SecureLoginApp" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-art art-chat" aria-hidden="true"><span>CB</span></div>
+        <div class="project-body">
+          <p class="tag">Desktop · 2025</p>
+          <h3>Cybersecurity Awareness Chatbot</h3>
+          <p>
+            WPF desktop app that teaches users about cybersecurity through an interactive chatbot, task manager
+            and quiz, with voice greeting, sentiment detection and natural-language command parsing.
+          </p>
+          <ul class="chips"><li>C#</li><li>WPF</li><li>.NET 8</li><li>MySQL</li><li>XAML</li><li>GitHub Actions</li></ul>
+          <div class="links">
+            <a href="https://github.com/tshabalalabongani315-afk/cybersecurity_chatbot" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
     </div>
 
-    <div class="skill">C# – 65%
-        <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+    <p class="more">
+      More on my GitHub, including university group work such as <em>Travelliance</em>, a travel-planning app
+      (requirements analysis and UX research).
+      <a href="https://github.com/tshabalalabongani315-afk?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories ↗</a>
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="reveal">
+    <h2 class="section-title"><span class="idx">04</span> Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul class="chips"><li>Java</li><li>C#</li><li>Kotlin</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Frameworks &amp; Libraries</h3>
+        <ul class="chips"><li>.NET</li><li>ASP.NET Core</li><li>Razor Pages</li><li>EF Core</li><li>React</li><li>Vite</li><li>Chakra UI</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Databases &amp; Backend</h3>
+        <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>SQLite</li><li>Oracle SQL</li><li>Supabase</li><li>Firebase</li><li>REST APIs</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Testing &amp; QA</h3>
+        <ul class="chips"><li>API testing</li><li>Regression testing</li><li>k6 load testing</li><li>xUnit</li><li>Defect documentation</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Workflow</h3>
+        <ul class="chips"><li>Git / GitHub</li><li>GitHub Actions</li><li>Docker</li><li>Agile / Scrum</li></ul>
+      </div>
     </div>
+  </section>
 
-    <div class="skill">Microsoft Office – 90%
-        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+  <!-- EDUCATION + LEADERSHIP -->
+  <section id="education" class="reveal">
+    <h2 class="section-title"><span class="idx">05</span> Education &amp; Achievements</h2>
+    <div class="two-col">
+      <div>
+        <div class="card">
+          <div class="tl-head">
+            <div>
+              <h3>Bachelor of Computer and Application Development</h3>
+              <p class="org">IIE Varsity College</p>
+            </div>
+            <span class="date">2024 – Present · Graduating 2027</span>
+          </div>
+          <p class="small-text">6 distinctions in first year (2024) and 3 in second year (2025).</p>
+        </div>
+        <div class="card">
+          <div class="tl-head">
+            <div>
+              <h3>National Senior Certificate</h3>
+              <p class="org">Hoërskool Warmbad, Bela-Bela, Limpopo</p>
+            </div>
+            <span class="date">2023</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Athletics</h3>
+          <ul class="bullets small">
+            <li>U23 South African Cross Triathlon Champion.</li>
+            <li>U23 Elite Triathlete competing nationally and internationally, including World Triathlon Continental Cup events.</li>
+            <li>Sprint and Olympic/Standard-distance racing.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Leadership</h3>
+          <ul class="bullets small">
+            <li>Deputy Head of Sport, Hoërskool Warmbad (2022/2023)</li>
+            <li>Swim Team Captain (2023)</li>
+            <li>Executive Committee Member (2022/2023)</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section>
-    <h2>Experience & Leadership</h2>
-    <div class="card">Junior Triathlon Coach (Volunteer) | 2024 – Present</div>
-    <div class="card">Leadership Executive Committee | 2022 – 2023</div>
-    <div class="card">Deputy Head of Sport | 2022 – 2023</div>
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <div class="contact-box">
+      <h2>Let's build something.</h2>
+      <p>I'm looking for internship and graduate opportunities in full stack and backend development. The quickest way to reach me is by email.</p>
+      <div class="cta-row center">
+        <a class="btn btn-primary" href="mailto:tshabalalabongani315@gmail.com">tshabalalabongani315@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/bongani-tshabalala-0873b039a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/tshabalalabongani315-afk" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Achievements</h2>
-    <div class="card">6 distinctions in first year of BCAD (2024)</div>
-    <div class="card">Recognised for leadership and reliability</div>
-    <div class="card">U23 Elite Triathlete competing nationally</div>
-</section>
+</main>
 
 <footer>
-    © 2026 Bongani Tshabalala • Portfolio
+  <p>© <span id="year">2026</span> Bongani Tshabalala · Pretoria, South Africa</p>
+  <p class="small-text">Built with plain HTML, CSS and JavaScript.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
