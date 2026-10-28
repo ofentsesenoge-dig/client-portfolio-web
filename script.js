@@ -62,6 +62,25 @@
         sections.forEach(function (s) { spy.observe(s); });
     }
 
+    // Light / dark theme toggle (choice saved in localStorage)
+    var themeBtn = document.getElementById('themeToggle');
+    var themeMeta = document.querySelector('meta[name="theme-color"]');
+    function currentTheme() {
+        return document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    }
+    function syncThemeUi() {
+        var light = currentTheme() === 'light';
+        themeBtn.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        if (themeMeta) themeMeta.setAttribute('content', light ? '#f5f5f2' : '#060607');
+    }
+    themeBtn.addEventListener('click', function () {
+        var next = currentTheme() === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) { /* storage blocked: still switches for this visit */ }
+        syncThemeUi();
+    });
+    syncThemeUi();
+
     // Scroll progress bar
     var bar = document.getElementById('progress');
     function updateProgress() {
@@ -111,10 +130,24 @@
     // Cursor-following glow in the hero
     var hero = document.getElementById('top');
     if (hero && !reduceMotion) {
+        var tiltEl = hero.querySelector('.hero-visual');
+        var canTilt = window.matchMedia('(hover: hover)').matches;
         hero.addEventListener('pointermove', function (e) {
             var r = hero.getBoundingClientRect();
             hero.style.setProperty('--hx', (e.clientX - r.left) + 'px');
             hero.style.setProperty('--hy', (e.clientY - r.top) + 'px');
+            // 3D tilt of the photo + code card, relative to the hero centre
+            if (tiltEl && canTilt && window.innerWidth > 980) {
+                var nx = (e.clientX - (r.left + r.width / 2)) / (r.width / 2);
+                var ny = (e.clientY - (r.top + r.height / 2)) / (r.height / 2);
+                tiltEl.style.setProperty('--ry', (nx * 7).toFixed(2) + 'deg');
+                tiltEl.style.setProperty('--rx', (-ny * 5).toFixed(2) + 'deg');
+            }
+        });
+        hero.addEventListener('pointerleave', function () {
+            if (!tiltEl) return;
+            tiltEl.style.setProperty('--ry', '0deg');
+            tiltEl.style.setProperty('--rx', '0deg');
         });
     }
 
