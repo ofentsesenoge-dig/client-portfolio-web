@@ -15,13 +15,17 @@ Personal portfolio for **Bongani Tshabalala**, a full stack developer and softwa
 
 ## Tech
 
-Plain **HTML, CSS and JavaScript**, with no build step and no dependencies.
+Plain **HTML, CSS and JavaScript**, with no build step and no dependencies (the only external request is the Google Fonts stylesheet).
 
 - Responsive layout (CSS grid, tested down to 375px)
-- Sticky navigation with active-section highlighting and a mobile menu
-- Scroll-reveal animations that respect `prefers-reduced-motion`
+- Dark and light themes, switched from the nav and remembered in `localStorage` (colours are CSS variables)
+- Sticky navigation with active-section highlighting, a scroll progress bar and a mobile menu
+- Hero effects: cursor-following glow, 3D tilt on the photo and code card, line-by-line headline reveal
+- Count-up stats, staggered scroll-reveal, and a cursor spotlight on project cards
+- All motion respects `prefers-reduced-motion`; a print stylesheet gives a clean white page when saved as a PDF
 - Accessible: skip link, visible focus states, semantic landmarks, alt text
 - SEO basics: meta description, Open Graph tags and `Person` structured data
+- Typography: Geist and Geist Mono, loaded from Google Fonts
 
 ## Run locally
 
@@ -35,8 +39,8 @@ Then open <http://localhost:8000>. Opening `index.html` directly in a browser al
 
 ```
 index.html      Page content and structured data
-styles.css      Design tokens, layout and responsive rules
-script.js       Navigation, scroll reveal and active-link logic
+styles.css      Design tokens (dark + light themes), layout, effects, responsive and print rules
+script.js       Theme toggle, navigation, scroll progress, reveals, count-up and hero interactions
 assets/         Optimised profile images (WebP with JPEG fallback)
 ```
 
