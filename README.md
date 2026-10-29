@@ -1,15 +1,16 @@
 # Bongani Tshabalala | Portfolio
 
-Personal portfolio for **Bongani Tshabalala**, a full stack developer and software development intern based in Pretoria, South Africa.
+Personal portfolio for **Bongani Tshabalala**, a final-year Application Development student and aspiring software developer based in Pretoria, South Africa, with completed industry experience as a Software Development Intern at FOCI Group (June 2026 – October 2026).
 
 **Live site:** _add your GitHub Pages URL here after deploying_
 
 ## What's on the site
 
-- Hero with current role and core stack
-- Experience (FOCI Group, Software Development Intern)
+- Hero with professional summary and core stack
+- About and profile details (final-year student at Emeris, formerly IIE Varsity College)
+- Experience (FOCI Group, Software Development Intern, June 2026 – October 2026)
 - Featured projects: Cattle Manager, Global Logistics Management System, Secure User Portal, Cybersecurity Awareness Chatbot
-- Skills grouped by area: languages, frameworks, databases, testing, workflow
+- Skills grouped by area: languages, frontend, backend and frameworks, databases and data platforms, testing and QA, version control and collaboration, desktop and mobile
 - Education, athletics and leadership
 - Contact links
 
