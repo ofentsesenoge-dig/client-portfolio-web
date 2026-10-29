@@ -151,6 +151,42 @@
         });
     }
 
+    // Screenshot viewer on the Cattle Manager card: tabs + gentle auto-advance
+    document.querySelectorAll('[data-shots]').forEach(function (box) {
+        var imgs = box.querySelectorAll('.shot-frame img');
+        var tabs = box.querySelectorAll('.shot-tabs button');
+        var current = 0, paused = false, visible = false, timer = null;
+        function show(i) {
+            current = i;
+            imgs.forEach(function (img, n) { img.classList.toggle('on', n === i); });
+            tabs.forEach(function (tab, n) {
+                tab.classList.toggle('on', n === i);
+                tab.setAttribute('aria-pressed', String(n === i));
+            });
+        }
+        tabs.forEach(function (tab, n) {
+            tab.addEventListener('click', function () { show(n); });
+        });
+        // fetch the other screenshots as soon as the card nears the viewport, so tab switches never flash blank
+        function preload() { imgs.forEach(function (img) { img.loading = 'eager'; }); }
+        if ('IntersectionObserver' in window) {
+            var near = new IntersectionObserver(function (entries) {
+                if (entries[0].isIntersecting) { preload(); near.disconnect(); }
+            }, { rootMargin: '600px 0px' });
+            near.observe(box);
+        } else { preload(); }
+        if (reduceMotion || imgs.length < 2) return;
+        function tick() { if (!paused && visible) show((current + 1) % imgs.length); }
+        timer = setInterval(tick, 4500);
+        box.addEventListener('pointerenter', function () { paused = true; });
+        box.addEventListener('pointerleave', function () { paused = false; });
+        box.addEventListener('focusin', function () { paused = true; });
+        box.addEventListener('focusout', function () { paused = false; });
+        if ('IntersectionObserver' in window) {
+            new IntersectionObserver(function (entries) { visible = entries[0].isIntersecting; }, { threshold: 0.3 }).observe(box);
+        } else { visible = true; }
+    });
+
     // Cursor spotlight on project cards
     if (!reduceMotion) {
         document.querySelectorAll('.project').forEach(function (card) {
