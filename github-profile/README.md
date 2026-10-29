@@ -7,10 +7,10 @@
 
 # Hi, I'm Bongani 👋
 
-**Full stack developer · Software Development Intern @ FOCI Group · BCAD student, IIE Varsity College**
+**Aspiring Software Developer · Final-year Application Development student, Emeris (formerly IIE Varsity College) · Former Software Development Intern @ FOCI Group**
 Pretoria, South Africa · U23 South African Cross Triathlon Champion
 
-I build web and desktop software end to end, and I test it like someone who has to keep it running: API testing, regression testing and k6 load testing on a compliance-focused proptech platform by day, full stack side projects the rest of the time.
+Final-year Application Development student with hands-on industry experience in software testing, API validation and performance testing. I build full-stack web, backend and desktop applications using React, Node.js, ASP.NET Core and SQL databases, with a focus on secure, reliable and maintainable software.
 
 🌐 **Portfolio:** PORTFOLIO_URL
 💼 **LinkedIn:** [bongani-tshabalala](https://www.linkedin.com/in/bongani-tshabalala-0873b039a)
@@ -34,19 +34,25 @@ I build web and desktop software end to end, and I test it like someone who has 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=flat&logo=k6&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Blazor](https://img.shields.io/badge/Blazor_WebAssembly-512BD4?style=flat&logo=blazor&logoColor=white)
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
 
 ## Featured projects
 
 | Project | What it is | Stack |
 |---|---|---|
-| [**Cattle Manager**](https://github.com/tshabalalabongani315-afk/CattleManager) | Farm record-keeping: animal register, vaccinations, weights and daily kraal-count reconciliation, with JWT auth and a live dashboard | React, Vite, Chakra UI, Node.js, Express, SQLite |
-| [**Secure User Portal**](https://github.com/tshabalalabongani315-afk/SecureLoginApp) | Auth portal with email confirmation, password reset, TOTP 2FA, roles and an activity-log dashboard | ASP.NET Core 8, Identity, EF Core, SQL Server, xUnit |
+| [**Cattle Manager**](https://github.com/tshabalalabongani315-afk/CattleManager) ([live demo](https://cattle-manager-seven.vercel.app/)) | Farm record-keeping: animal register, vaccinations, weights and daily kraal-count reconciliation, with JWT auth and a live dashboard | React, Vite, Chakra UI, Node.js, Express, SQLite |
+| [**Secure User Portal**](https://github.com/tshabalalabongani315-afk/SecureLoginApp) | Auth portal with email confirmation, password reset, TOTP 2FA, roles and an activity-log dashboard | ASP.NET Core 8, Identity, EF Core, Microsoft SQL Server, xUnit |
 | [**Cybersecurity Awareness Chatbot**](https://github.com/tshabalalabongani315-afk/cybersecurity_chatbot) | WPF desktop app with chatbot, task manager, quiz, voice greeting and sentiment detection | C#, WPF, .NET 8, MySQL, GitHub Actions |
-| **Global Logistics Management System** | Enterprise platform replacing legacy spreadsheets for contract and service-request management (private repo) | ASP.NET Core MVC, Web API, EF Core, SQL Server, JWT, Docker, xUnit |
+| **Global Logistics Management System** | Enterprise platform replacing legacy spreadsheets for contract and service-request management (private repo) | ASP.NET Core MVC, Web API, EF Core, Microsoft SQL Server, JWT, Docker, xUnit |
 
 ## Currently
 
-- 🔧 Interning as a software developer and QA engineer at FOCI Group
-- 🎓 Completing my BCAD degree (graduating 2027)
+- 🔧 Completed my Software Development Internship at FOCI Group (June 2026 – October 2026)
+- 🎓 Final-year student, expected completion 2026 and graduation 2027
 - 🌱 Deepening backend and API design, plus test automation
 - 📫 Open to internship and graduate opportunities. Email me.
