@@ -2,7 +2,7 @@
 
 Personal portfolio for **Bongani Tshabalala**, a final-year Application Development student and aspiring software developer based in Pretoria, South Africa, with completed industry experience as a Software Development Intern at FOCI Group (June 2026 – October 2026).
 
-**Live site:** _add your GitHub Pages URL here after deploying_
+**Live site:** <https://bongani-portfoli.netlify.app/>
 
 ## What's on the site
 
@@ -42,7 +42,8 @@ Then open <http://localhost:8000>. Opening `index.html` directly in a browser al
 index.html      Page content and structured data
 styles.css      Design tokens (dark + light themes), layout, effects, responsive and print rules
 script.js       Theme toggle, navigation, scroll progress, reveals, count-up and hero interactions
-assets/         Optimised profile images (WebP with JPEG fallback)
+assets/         Optimised profile images (WebP with JPEG fallback), Cattle Manager screenshots,
+                and og-image.png (1200x630 link-preview card)
 ```
 
 ## Deploy on GitHub Pages

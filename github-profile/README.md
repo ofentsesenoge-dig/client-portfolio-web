@@ -2,7 +2,6 @@
   GitHub profile README.
   To use it: create a PUBLIC repository named exactly like your GitHub username
   (e.g. tshabalalabongani315-afk/tshabalalabongani315-afk) and put this file at its root as README.md.
-  Then replace PORTFOLIO_URL below with your GitHub Pages link.
 -->
 
 # Hi, I'm Bongani 👋
@@ -12,7 +11,7 @@ Pretoria, South Africa · U23 South African Cross Triathlon Champion
 
 Final-year Application Development student with hands-on industry experience in software testing, API validation and performance testing. I build full-stack web, backend and desktop applications using React, Node.js, ASP.NET Core and SQL databases, with a focus on secure, reliable and maintainable software.
 
-🌐 **Portfolio:** PORTFOLIO_URL
+🌐 **Portfolio:** [bongani-portfoli.netlify.app](https://bongani-portfoli.netlify.app/)
 💼 **LinkedIn:** [bongani-tshabalala](https://www.linkedin.com/in/bongani-tshabalala-0873b039a)
 ✉️ **Email:** tshabalalabongani315@gmail.com
 
