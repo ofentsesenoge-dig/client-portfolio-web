@@ -57,6 +57,6 @@ assets/         Optimised profile images (WebP with JPEG fallback), Cattle Manag
 ## Contact
 
 - Email: tshabalalabongani315@gmail.com
-- LinkedIn: [bongani-tshabalala](https://www.linkedin.com/in/bongani-tshabalala-0873b039a)
+- LinkedIn: [bongani-nkosana-tshabalala](https://www.linkedin.com/in/bongani-nkosana-tshabalala-0873b039a)
 - GitHub 1: [tshabalalabongani315-afk](https://github.com/tshabalalabongani315-afk)
 - GitHub 2: [st10446555](https://github.com/st10446555)

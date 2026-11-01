@@ -12,7 +12,7 @@ Pretoria, South Africa · U23 South African Cross Triathlon Champion
 Final-year Application Development student with hands-on industry experience in software testing, API validation and performance testing. I build full-stack web, backend and desktop applications using React, Node.js, ASP.NET Core and SQL databases, with a focus on secure, reliable and maintainable software.
 
 🌐 **Portfolio:** [bongani-portfoli.netlify.app](https://bongani-portfoli.netlify.app/)
-💼 **LinkedIn:** [bongani-tshabalala](https://www.linkedin.com/in/bongani-tshabalala-0873b039a)
+💼 **LinkedIn:** [bongani-nkosana-tshabalala](https://www.linkedin.com/in/bongani-nkosana-tshabalala-0873b039a)
 ✉️ **Email:** tshabalalabongani315@gmail.com
 
 ## Tech I work with
